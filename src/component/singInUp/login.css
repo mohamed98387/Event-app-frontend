@@ -1,0 +1,250 @@
+.sing {
+  height: 100vh;
+  display: flex;
+  color: white;
+}
+
+.sing__Aside {
+  width: 50%;
+  background-color: #f82249;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sing__Form {
+  width: 50%;
+  background-color: rgba(6, 12, 34, 0.98);
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 15px;
+  overflow: auto;
+}
+
+.PageSwitcher {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1%;
+}
+
+.PageSwitcher__Item {
+  background-color: rgba(6, 12, 34, 0.98);
+  color: #9da6b1;
+  padding: 10px 25px;
+  cursor: pointer;
+  font-size: 0.9em;
+  border: none;
+  outline: none;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.PageSwitcher__Item--Active {
+  background-color: #f82249;
+  color: white;
+  text-decoration: none;
+}
+
+.PageSwitcher__Item:first-child {
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  text-decoration: none;
+  color: white;
+}
+.PageSwitcher__Item:last-child {
+  border-top-right-radius: 25px;
+  text-decoration: none;
+  width: 130px;
+  border-bottom-right-radius: 25px;
+  color: white;
+}
+
+.FormCenter {
+  margin-bottom: 50px;
+}
+
+.FormTitle {
+  color: #707c8b;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+
+.FormTitle__Link {
+  color: #707c8b;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.7em;
+  margin: 0 10px;
+  padding-bottom: 5px;
+}
+
+.FormTitle__Link:first-child {
+  margin-left: 0;
+  text-decoration: none;
+  color: white;
+}
+.FormTitle__Link:last-child {
+  margin-left: 0;
+  text-decoration: none;
+  color: white;
+}
+.FormTitle__Link--Active {
+  color: white;
+  border-bottom: 1px solid #f82249;
+}
+
+.FormField {
+  margin-bottom: 80px;
+}
+
+.FormField__Label {
+  display: block;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  color: white;
+}
+.FormField__Input {
+  width: 85%;
+  background-color: transparent;
+  border: none;
+  color: white;
+  outline: none;
+  border-bottom: 1px solid #445366;
+  font-size: 1em;
+  font-weight: 300;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.FormField__Input::placeholder {
+  color: #616e7f;
+}
+
+.FormField__Button {
+  background-color: #f82249;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  padding: 15px 60px;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.FormField__Link {
+  color: #66707d;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 20px;
+  border-bottom: 1.5px solid #f82249;
+  padding-bottom: 5px;
+}
+.FormField__Link:hover,
+.FormField__Link:active,
+.FormField__Link1:hover,
+.FormField__Link1:active {
+  color: white;
+  text-decoration: none;
+}
+.FormField__Checkbox {
+  position: relative;
+  top: 1.5px;
+}
+
+.FormField__TermsLink {
+  color: white;
+  border-bottom: 1px solid #f82249;
+  text-decoration: none;
+  display: inline-block;
+  padding-bottom: 2px;
+  margin-left: 5px;
+}
+
+.FormField1 {
+  margin-bottom: 15px;
+}
+
+.FormField__Label1 {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 0.9em;
+  color: white;
+}
+.FormField__Input1 {
+  width: 85%;
+  background-color: transparent;
+  border: none;
+  color: white;
+  outline: none;
+  border-bottom: 1px solid #445366;
+  font-size: 1em;
+  font-weight: 280;
+  padding-bottom: 8px;
+  margin-top: 10px;
+}
+.FormField__Button1 {
+  background-color: #f82249;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  padding: 15px 60px;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.FormField__Link1 {
+  color: #66707d;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 20px;
+  border-bottom: 1.5px solid #f82249;
+  padding-bottom: 5px;
+}
+.material-icons {
+  font-size: 40px;
+  color: #f82249;
+  margin-right: 10px;
+  display: inline-block;
+}
+.sing__Aside img {
+  display: block;
+  align-self: center;
+  border-radius: 50%;
+  width: 500px;
+  height: 500px;
+  background-color: rgba(6, 12, 34, 0.98);
+}
+@media (max-width: 1030px) {
+  .sing__Aside img {
+    width: 400px;
+    height: 400px;
+  }
+}
+@media (max-width: 820px) {
+  .sing__Aside img {
+    width: 350px;
+    height: 350px;
+  }
+}
+@media (max-width: 730px) {
+  .sing__Aside img {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 630px) {
+  .sing__Aside img {
+    width: 250px;
+    height: 250px;
+  }
+}
+@media (max-width: 510px) {
+  .sing__Aside img {
+    width: 200px;
+
+    height: 200px;
+  }
+}

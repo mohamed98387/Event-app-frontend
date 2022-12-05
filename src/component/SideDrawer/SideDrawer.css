@@ -1,0 +1,77 @@
+.SideDrawer {
+  height: 100%;
+  background-color: rgba(6, 12, 34, 0.98);
+  opacity: 0.98;
+  box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50%;
+  max-width: 320px;
+  z-index: 200;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-out;
+}
+.SideDrawer.open {
+  transform: translateX(0);
+}
+.SideDrawer ul {
+  height: 90%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.SideDrawer li {
+  margin: 0.5rem;
+}
+
+.SideDrawer a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: all ease-in-out 0.3s;
+}
+@media (max-width: 520px) {
+  .SideDrawer ul {
+    margin-left: -30px;
+  }
+  .SideDrawer a {
+    font-size: 1rem;
+  }
+}
+.SideDrawer a:hover,
+.SideDrawer a:active {
+  color: #f82249;
+  text-decoration: none;
+}
+@media (min-width: 1061px) {
+  .SideDrawer {
+    display: none;
+  }
+}
+.SideDrawer li.connexionBt a {
+  color: #fff;
+  background: #f82249;
+  padding: 6px 19px;
+  border-radius: 50px;
+  border: 2px solid #f82249;
+  transition: all ease-in-out 0.4s;
+  font-weight: 300;
+  margin-left: 8px;
+  margin-top: 2px;
+  line-height: 1;
+}
+
+.SideDrawer li.connexionBt a:hover {
+  background: none;
+  text-decoration: none;
+}
+.SideDrawer li.connexionBt {
+  margin-top: 25px;
+}
+
+.SideDrawer .activeItem {
+  color: #f82249;
+}

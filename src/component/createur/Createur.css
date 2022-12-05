@@ -1,0 +1,9 @@
+.MyCol {
+  position: unset;
+  text-align: center;
+}
+.MyCol img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}

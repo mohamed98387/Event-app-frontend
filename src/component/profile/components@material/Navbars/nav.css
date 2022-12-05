@@ -1,0 +1,21 @@
+.LinkHome {
+  color: rgba(27, 27, 27, 0.863);
+  text-decoration: none;
+  transition: ease-in-out 0s;
+}
+.LinkHome:hover,
+.LinkHome:active {
+  color: white;
+  text-decoration: none;
+}
+.sideLinkHome {
+  color: white;
+  text-decoration: none;
+  transition: ease-in-out 0s;
+}
+.sideLinkHome:hover,
+.sideLinkHome:link,
+.sideLinkHome:active {
+  color: white;
+  text-decoration: none;
+}

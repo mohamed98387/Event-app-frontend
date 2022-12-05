@@ -1,0 +1,148 @@
+.navbar {
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  height: 80px;
+  z-index: 1000;
+}
+.navbar-navigation {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.navbar-logo {
+  margin-top: 22px;
+  padding-left: 120px;
+}
+.navbar-logo img {
+  width: 250px;
+  cursor: pointer;
+  margin-left: -70px;
+}
+
+.navbar-items ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.navbar-items li {
+  padding-right: 17px;
+}
+.navbar-items a {
+  color: rgb(184, 182, 182);
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  outline: none;
+}
+.Link1 {
+  color: rgb(184, 182, 182);
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 14px;
+  outline: none;
+  margin-top: 2.35px;
+}
+.Link1:hover,
+.Link1:active {
+  color: white;
+  text-decoration: none;
+}
+.menu a:hover,
+.menu a:active {
+  color: black;
+  text-decoration: none;
+}
+.navbar-items a:hover,
+.navbar-items a:active {
+  color: white;
+  text-decoration: none;
+}
+@media (max-width: 1061px) {
+  .navbar-items {
+    display: none;
+  }
+  .navbar {
+    background-color: rgba(6, 12, 34, 0.98);
+  }
+}
+@media (min-width: 1061px) {
+  .not-visibal-button {
+    display: none;
+  }
+  .navbar-logo {
+    margin-left: 0;
+  }
+}
+.nav-menu li.connexion a {
+  color: #fff;
+  background: #f82249;
+  padding: 7px 22px;
+  border-radius: 50px;
+  border: 2px solid #f82249;
+  transition: all ease-in-out 0.4s;
+  font-weight: 500;
+  margin-left: 8px;
+  margin-top: 2px;
+  line-height: 1;
+}
+
+.nav-menu li.connexion a:hover {
+  background: none;
+  text-decoration: none;
+}
+
+.nav-menu li.connexion:hover a:before,
+.nav-menu li.connecion.menu-active a:before {
+  visibility: hidden;
+}
+.nav-menu > li > a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 1.5px;
+  bottom: -2px;
+  left: -7px;
+  background-color: #f82249;
+  visibility: hidden;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.nav-menu a:hover:before,
+.nav-menu li:hover > a:before,
+.nav-menu .menu-active > a:before {
+  visibility: visible;
+  width: 95%;
+}
+.nav-menu li {
+  position: relative;
+}
+@media (max-width: 1295px) {
+  .navbar-items a {
+    font-size: 12px;
+    font-weight: 700;
+  }
+}
+@media (max-width: 1258px) and (min-width: 1061px) {
+  .navbar-items a {
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .navbar-logo img {
+    width: 140px;
+    margin-top: -24px;
+  }
+}
+@media (max-width: 1164px) and (min-width: 1050px) {
+  .navbar-items a {
+    font-size: 11px;
+  }
+}
+.scrolled {
+  background-color: rgba(6, 12, 34, 0.98);
+}

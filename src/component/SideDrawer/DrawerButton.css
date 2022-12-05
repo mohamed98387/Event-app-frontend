@@ -1,0 +1,21 @@
+.Toogle-Button {
+  display: flex;
+  flex-direction: column;
+  height: 24px;
+  width: 30px;
+  background-color: transparent;
+  justify-content: space-around;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  box-sizing: border-box;
+  margin-left: 20px;
+}
+.Toogle-Button:focus {
+  outline: none;
+}
+.Button-ligne {
+  width: 30px;
+  height: 2.5px;
+  background: white;
+}
